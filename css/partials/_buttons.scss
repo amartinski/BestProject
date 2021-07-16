@@ -1,0 +1,29 @@
+a{
+    @include typeface-2(p2, desktop);
+    text-decoration: none;
+    color: $black-normal;
+    transition: .5s ease;
+    &:hover{
+        opacity: .9;
+    }
+}
+
+.btn{
+    color: $white-normal;
+    background: linear-gradient(220.94deg, #3A5DDB 14.43%, #202290 85.28%);
+    border-radius: 16px;
+
+    padding: 12px 32px;
+
+
+    box-shadow: 0px 43px 60px rgba(47, 111, 194, 0.14), 
+    0px 12.9632px 18.0882px rgba(47, 111, 194, 0.0912224), 
+    0px 5.38427px 7.51293px rgba(47, 111, 194, 0.07), 
+    0px 1.94738px 2.71728px rgba(47, 111, 194, 0.0487776);
+
+    &:hover{
+        transform: scale(1.05);
+        opacity: 80%;
+        filter: blur(0.5px);
+    }
+}
