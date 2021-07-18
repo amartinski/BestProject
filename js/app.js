@@ -51,3 +51,20 @@ menuItem3.addEventListener('click', ShowDropdown3);
 dropdownMenu1.addEventListener('mouseleave',RemoveDropdown);
 dropdownMenu2.addEventListener('mouseleave',RemoveDropdown);
 dropdownMenu3.addEventListener('mouseleave',RemoveDropdown);
+
+
+//MENU MOBILE
+
+const showMenu = (toggleID, navID) =>{
+    const toggle = document.getElementById(toggleID);
+    const nav = document.getElementById(navID);
+
+    if(toggle && nav){
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active-menu-mobile');
+            toggle.classList.toggle('active-bx');
+        })
+    }
+}
+
+showMenu('bx', 'menu-mobile')
